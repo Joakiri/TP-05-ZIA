@@ -17,9 +17,9 @@ public class HomeController : Controller
         return View();
     }
     
-    public IActionResult play (string name){
-        Partida partida = new Partida(name);
-        partida.moveFoward();
+    public IActionResult play (){
+        Partida partida = new Partida(ViewBag.name);
+        partida.moveFowardButton();
         HttpContext.Session.SetString("partida", Objeto.ObjectToString(partida));
         return View("Habitacion1");
     }
@@ -34,10 +34,9 @@ public class HomeController : Controller
         int i = partida.moveFowardButton();
         return View(i);
     }
-    public IActionResult IngresarNombre()
+    public IActionResult ANombre(string name)
     {
-        Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
-        ViewBag.name = partida.name;
+        ViewBag.name = name;
         return View("IngresarNombre");
     }
     public IActionResult MostrarTutorial()
