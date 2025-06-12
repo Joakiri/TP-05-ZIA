@@ -38,6 +38,11 @@ public class HomeController : Controller
         int i = partida.moveFowardButton();
         return View(i);
     }
+    public IActionResult ANombre(string name)
+    {
+        ViewBag.name = name;
+        return View("IngresarNombre");
+    }
     [HttpPost]
     public IActionResult MostrarTutorial()
     {
