@@ -33,4 +33,35 @@ footer {
   padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+  clear:both;
+}
+
+.Integrantes img{
+width: 20%;
+height: auto;
+float: left;
+padding-left: 5%;
+padding-bottom: 5%;
+padding-top: 5%;
+}
+
+.Integrantes h2{
+  text-align: center;
+}
+
+.Tuto{
+  background-image: url(/prision-tuto.jpg);
+  background-size: cover;
+  padding:15%;
+  text-align: center;
+}
+
+.Tuto h1{
+font-size: 250%;
+color: white;
+}
+
+.Tuto h2{
+  color: white;
+  background-color: rgba(100, 100, 100, 0.5);
 }

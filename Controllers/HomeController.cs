@@ -44,17 +44,15 @@ public class HomeController : Controller
         return View("IngresarNombre");
     }
     [HttpPost]
-    public IActionResult MostrarTutorial()
+        public IActionResult MostrarTutorial()
     {
         return View("Tutorial");
+    }
+     public IActionResult fromXToPerdiste(string answer){
+    return View("Perdiste");
     }
     public IActionResult MostrarIntegrantes()
     {
         return View("Integrantes");
     }
-     public IActionResult fromXToPerdiste(string answer){
-    return View("Perdiste");
-    }
 }
-
-
