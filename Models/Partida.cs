@@ -24,9 +24,6 @@ public class Partida
         this.correctAnswers = new string[4];
         correctAnswers[1] = ""; correctAnswers[2] = "";  correctAnswers[3] = "";  correctAnswers[4] = "";     
     }
-    public void moveFoward(){
-        
-    }
     public int moveFowardForm(string answer){
         if(answer == correctAnswers[currentRoom]){
             currentRoom++;

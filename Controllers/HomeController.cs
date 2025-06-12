@@ -19,27 +19,26 @@ public class HomeController : Controller
     
     public IActionResult play (string name){
         Partida partida = new Partida(name);
-        partida.moveFoward();
+        partida.moveFowardButton();
         HttpContext.Session.SetString("partida", Objeto.ObjectToString(partida));
+        ViewBag.name = name;
         return View("Habitacion1");
     }
+    [HttpPost]
+    
     public IActionResult fromXToY(string answer){
 
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardForm(answer);
         return View(i);
     }
+    [HttpPost]
      public IActionResult fromXToYButton(string answer){
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardButton();
         return View(i);
     }
-    public IActionResult IngresarNombre()
-    {
-        Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
-        ViewBag.name = partida.name;
-        return View("IngresarNombre");
-    }
+    [HttpPost]
     public IActionResult MostrarTutorial()
     {
         return View("Tutorial");
@@ -48,4 +47,9 @@ public class HomeController : Controller
     {
         return View("Integrantes");
     }
+     public IActionResult fromXToPerdiste(string answer){
+    return View("Perdiste");
+    }
 }
+
+
