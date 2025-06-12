@@ -1,3 +1,9 @@
+*{
+margin: 0%;
+padding: 0%;
+background-color: black;
+}
+
 html {
   font-size: 14px;
   min-height: 100%;
@@ -11,26 +17,28 @@ html {
 
 /* Fondos */
 section.Room1{
-  background-image: url(/TP-05-ZIA/wwwroot/IMAGENES/Imagen-celda.jpg);
+  background-image: url(../IMAGENES/Celdaa.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
 }
+section.Room1 h2{
+  margin-top: 8%;
+  margin-left: 3%;
+  color: white;
+}
+section.Room1 a{
+  background-color: aqua;
+  margin-left: 90%;
+  margin-top: 70px;
+}
+
 section.Room2{
-  background-image: url(/TP-05-ZIA/wwwroot/IMAGENES/Pasillo-Celda.jpg);
+  background-image: url(../IMAGENES/Pasillo-LuzApagada.jpg);
 }
 section.Room3{
   background-image: url();
 }
 section.Room4{
   background-image: url();
-}
-
-body {
-  margin: 10px;
-  padding: 10px;
-}
-
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
 }
