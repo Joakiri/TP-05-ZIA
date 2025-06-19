@@ -2,6 +2,7 @@
 margin: 0%;
 padding: 0%;
 background-color: black;
+
 }
 
 html {
@@ -14,61 +15,153 @@ html {
     font-size: 16px;
   }
 }
+/* GENERAL */
+p{
+  color: white;
+}
+input{
+  color: aliceblue;
+  background-color: darkgrey;
+  text-decoration: none;
+}
+a{
+  background: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 17px;
+  background-color: rgb(87, 30, 30);
+  padding: 2%;
+  float: left;
 
+}
+h1{
+  background: none;
+
+}
+h2{
+  background: none;
+}
 /* Fondos */
-section.Room1{
+.INDEX{
+  background-image: url(../IMAGENES/ImagenInicio.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.Integrantes{
+  background-image: url(../IMAGENES/NOSOTROS.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}  
+.Tuto{
+  background-image: url(../IMAGENES/Instrucciones.jpg);
+  background-size: cover;
+  padding:15%;
+  text-align: center;
+}
+.Room0{
+  background-image: url(../IMAGENES/ImagenInicio.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.Room1{
   background-image: url(../IMAGENES/Celdaa.jpg);
   height: 1000px;
   background-size: cover;
   background-position: center;
 }
-section.Room1 h2{
-  margin-top: 8%;
+
+.Room2{
+  background-image: url(../IMAGENES/apagado3.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.Room3{
+  background-image: url(..//IMAGENES/Pasillo-LuzPrendida.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.Room4{
+  background-image: url();
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* estilooos */
+
+
+
+.INDEX h2{
+  color: white;
+  width: 10%;
+  padding-top: 2%;
+  float: left;
+  padding: 0.5%;
+  padding-left: 3%;
+}
+.INDEX h1{
+  padding: 3% 0% 5% 0%;
+  padding-left: 3%;
+  color: rgb(87, 30, 30);
+}
+.Tuto h2{
+  color: white;
+  color: rgb(87, 30, 30);
+  padding-top: 3%;
+}
+.Tuto h1{
+  color: rgb(87, 30, 30);
+  padding-top: 2%;
+  font-size: 200%;
+}
+
+.Room0 form{
+  background: none;
+  border-radius: 17px;
+  background-color: rgb(87, 30, 30);
+  width: 13%;
+  padding: 0.3%;
+  margin-top:2% ;
+  margin-left: 3%;
+}
+.Room0 h1{
+  color: white;
+  padding-top: 3%;
+  padding-left: 3%;
+  color: rgb(87, 30, 30);
+}
+.Room0 input{
+  margin-left: 3%;
+  background-color: silver;
+  color: rgb(87, 30, 30);
+  border-style: none;
+  
+}
+
+
+.Room1 h2{
+  padding-top: 6%;
   margin-left: 3%;
   color: white;
 }
-section.Room1 a{
+.Room1 a{
   background-color: aqua;
   margin-left: 90%;
   margin-top: 70px;
 }
 
-section.Room2{
-  background-image: url(../IMAGENES/Pasillo-LuzApagada.jpg);
-}
-section.Room3{
-  background-image: url();
-}
-section.Room4{
-  background-image: url();
+.Room2 h2{
+  text-align: center;
+  color: white;
+  background: none;
 }
 
-.Integrantes img{
-  width: 20%;
-  height: auto;
-  float: left;
-  padding-left: 5%;
-  padding-bottom: 5%;
-  padding-top: 5%;
-  }
-  
-  .Integrantes h2{
-    text-align: center;
-  }
-  
-  .Tuto{
-    background-image: url(/prision-tuto.jpg);
-    background-size: cover;
-    padding:15%;
-    text-align: center;
-  }
-  
-  .Tuto h1{
-  font-size: 250%;
-  color: white;
-  }
-  
-  .Tuto h2{
-    color: white;
-    background-color: rgba(100, 100, 100, 0.5);
-  }
+.Room3 h2{
+font-size: 200%;
+color: white;
+}

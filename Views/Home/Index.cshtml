@@ -1,17 +1,6 @@
-﻿<section class = "INDEX">
-@{
-    ViewData["Title"] = "Index";
-}
-
-<div>
-    <h1>PRISON BREAK</h1>
-    <p>Se ha producido un error en el sistema. Uno de los reclusos está a punto de escapar... ¿Eres tú?</p>
-</div>
-<h2>Has sido encerrado injustamente en una prisión de máxima seguridad. Las puertas están selladas, las cámaras te vigilan, y los guardias patrullan sin descanso.
-Pero esta noche, algo ha cambiado... has encontrado una pequeña oportunidad para huir. Tu misión es clara: escapar antes de que se acabe el tiempo. Tendrás 60 minutos para resolver acertijos, descifrar pistas y evitar que te atrapen.
-Cada decisión cuenta. Un paso en falso... y permanecerás entre rejas para siempre.</h2>
-
-<h2>Para arrancar el juego toque <a href='@Url.Action("ANombre")'> aquí</a></h2> 
-<h2>Para ver el tutorial toque <a href='@Url.Action("MostrarTutorial")'> aquí</a></h2>
-<h2>Para ver los integrantes toque <a href='@Url.Action("MostrarIntegrantes")'> aquí</a></h2>
+﻿<section class = "INDEX">     
+    <h1>Se ha producido un error en el sistema. Uno de los reclusos está a punto de escapar... ¿Eres tú?</h1>
+    <h2><a href='@Url.Action("ANombre", "Home")'> Empezar</a></h2> 
+    <h2><a href='@Url.Action("MostrarTutorial", "Home")'> Tutorial</a></h2>
+    <h2><a href='@Url.Action("MostrarIntegrantes", "Home")'> Inegrantes</a></h2>
 </section>

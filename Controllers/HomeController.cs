@@ -32,11 +32,11 @@ public class HomeController : Controller
         int i = partida.moveFowardForm(answer);
         return View(i);
     }
-    [HttpPost]
-     public IActionResult fromXToYButton(string answer){
+
+     public IActionResult fromXToYButton(){
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardButton();
-        return View(i);
+        return View($"Habitacion{i}");
     }
     public IActionResult ANombre(string name)
     {
@@ -44,15 +44,15 @@ public class HomeController : Controller
         return View("IngresarNombre");
     }
     [HttpPost]
-        public IActionResult MostrarTutorial()
-    {
-        return View("Tutorial");
-    }
-     public IActionResult fromXToPerdiste(string answer){
-    return View("Perdiste");
+    public IActionResult fromXToPerdiste(){
+        return View("Perdiste");
     }
     public IActionResult MostrarIntegrantes()
     {
         return View("Integrantes");
+    }
+      public IActionResult MostrarTutorial()
+    {
+        return View("Tutorial");
     }
 }
