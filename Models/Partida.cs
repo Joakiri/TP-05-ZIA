@@ -21,7 +21,7 @@ public class Partida
         correctAnswers[0] = ""; correctAnswers[1] = "723";  correctAnswers[2] = "LLAVE";  correctAnswers[3] = "";     
     }
     public int moveFowardForm(string answer){
-        if(answer == correctAnswers[currentRoom]){
+        if(answer == correctAnswers[currentRoom + 1]){
             currentRoom++;
         }
         return currentRoom;

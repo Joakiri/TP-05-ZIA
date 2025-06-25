@@ -151,8 +151,10 @@ h2{
 }
 .Room1 a{
   background-color: aqua;
-  margin-left: 90%;
-  margin-top: 70px;
+  margin-left: 82.5%;
+  margin-top: 620px;
+  opacity: 0%;
+  padding: 1.5%;
 }
 
 .Room2 h2{
@@ -160,8 +162,37 @@ h2{
   color: white;
   background: none;
 }
+.Room2 form{
+  background: none;
+  width: 9%;
+  background-color: rgb(87, 30, 30);
+  margin: 5% 0% 0% 45%;
+  padding: 1%;
+  border-radius: 40px;
+}
+.Room2 input{
+  border-style: none;
+  color: aliceblue;
+}
+.Room2 input:last-child{
+  margin: 15% 0% 0% 35%;
+}
+.Room2 input:first-child{
+}
 
 .Room3 h2{
 font-size: 200%;
-color: white;
+color: rgb(255, 255, 255);
+background-color: firebrick ;
+text-align: center;
+}
+
+.Room3 h3{
+  color: white;
+  font-size: 120%;
+  background: none;
+}
+
+.Room3 form{
+  background: none;
 }

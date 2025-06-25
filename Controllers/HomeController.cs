@@ -30,7 +30,7 @@ public class HomeController : Controller
 
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardForm(answer);
-        return View(i);
+        return View($"Habitacion{i+1}");
     }
 
      public IActionResult fromXToYButton(){
