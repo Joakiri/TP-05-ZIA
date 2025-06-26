@@ -16,7 +16,7 @@ public class HomeController : Controller
     {
         return View();
     }
-    
+    [HttpPost]
     public IActionResult play (string name){
         Partida partida = new Partida(name);
         partida.moveFowardButton();
@@ -30,12 +30,15 @@ public class HomeController : Controller
 
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardForm(answer);
+        HttpContext.Session.SetString("partida", Objeto.ObjectToString(partida));
         return View($"Habitacion{i+1}");
     }
 
      public IActionResult fromXToYButton(){
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardButton();
+        ViewBag.cronometro = partida.cronometro;
+
         return View($"Habitacion{i}");
     }
     public IActionResult ANombre(string name)
@@ -43,10 +46,7 @@ public class HomeController : Controller
         ViewBag.name = name;
         return View("IngresarNombre");
     }
-    [HttpPost]
-    public IActionResult fromXToPerdiste(){
-        return View("Perdiste");
-    }
+
     public IActionResult MostrarIntegrantes()
     {
         return View("Integrantes");
@@ -55,4 +55,8 @@ public class HomeController : Controller
     {
         return View("Tutorial");
     }
+        public IActionResult fromXToPerdiste(){
+        return View("Perdiste");
+    }
+
 }

@@ -86,15 +86,27 @@ h2{
   background-position: center;
 }
 .Room4{
-  background-image: url();
+  background-image: url(..//IMAGENES/Imagen\ puertas.jpg);
   height: 1000px;
   background-size: cover;
   background-position: center;
 }
-
+.lose{
+  background-image: url(..//IMAGENES/perdiste.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
 /* estilooos */
 
-
+.lose h2{
+  color: white;
+  background-color: rgb(87, 30, 30) ;
+}
+.Tuto a{
+  margin-left: 39%;
+  margin-top: 1%;
+}
 
 .INDEX h2{
   color: white;
@@ -120,6 +132,15 @@ h2{
   font-size: 200%;
 }
 
+.Integrantes a{
+  margin-left: 40%;
+  
+}
+
+.lose a{
+  margin-left: 39%;
+  margin-top: 1%;
+}
 .Room0 form{
   background: none;
   border-radius: 17px;
@@ -140,7 +161,6 @@ h2{
   background-color: silver;
   color: rgb(87, 30, 30);
   border-style: none;
-  
 }
 
 
@@ -161,12 +181,13 @@ h2{
   text-align: center;
   color: white;
   background: none;
+  padding-top: 2%;
 }
 .Room2 form{
   background: none;
   width: 9%;
   background-color: rgb(87, 30, 30);
-  margin: 5% 0% 0% 45%;
+  margin: 5% 0% 0% 44%;
   padding: 1%;
   border-radius: 40px;
 }
@@ -177,22 +198,39 @@ h2{
 .Room2 input:last-child{
   margin: 15% 0% 0% 35%;
 }
-.Room2 input:first-child{
-}
+
 
 .Room3 h2{
-font-size: 200%;
 color: rgb(255, 255, 255);
-background-color: firebrick ;
 text-align: center;
-}
 
-.Room3 h3{
-  color: white;
-  font-size: 120%;
-  background: none;
 }
-
+.Room3 input{
+  float: left;
+  margin: 2% 0% 0% 15% ;
+  border-style: none;
+}
 .Room3 form{
   background: none;
+  background-color: rgb(87, 30, 30) ;
+  width: 30%;
+  padding: 1% 1% 3% 1%;
+  margin: 0% 0% 0% 33%;
+  border-radius: 15px;
 }
+
+.Room4 a{
+  margin: 23% 1% 0% 8%;
+  padding: 10%;
+  background: none;
+}
+
+.Room4 h2{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(87, 30, 30) ;
+  width: 30%;
+  padding: 1% 1% 1% 1%;
+  margin: 0% 0% 0% 30%;
+  border-radius: 15px;
+  }
