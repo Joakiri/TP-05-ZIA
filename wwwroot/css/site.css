@@ -91,6 +91,12 @@ h2{
   background-size: cover;
   background-position: center;
 }
+.Room5{
+  background-image: url(..//IMAGENES/escape2.png);
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
 .lose{
   background-image: url(..//IMAGENES/perdiste.jpg);
   height: 1000px;
@@ -233,4 +239,11 @@ text-align: center;
   padding: 1% 1% 1% 1%;
   margin: 0% 0% 0% 30%;
   border-radius: 15px;
+  }
+
+  .Room5 h2{
+    color: rgb(255, 255, 255);
+  text-align: center;
+
+  
   }
