@@ -1,8 +1,8 @@
 <section class = "Room0">
 <h1>Antes de empezar, necesitamos saber tu nombre.</h1>
   
-     <form action = '@Url.Action("play")' method = "POST">
-          <input type="string" name="nombre"  autocomplete="off"/>
+     <form action = '@Url.Action("play", "Home")' method = "POST">
+          <input type="text" name="name"  autocomplete="off"/>
           <input type="submit" value="Mandar"><br/>
           
      </form>

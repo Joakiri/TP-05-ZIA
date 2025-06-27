@@ -38,7 +38,8 @@ public class HomeController : Controller
         Partida partida = Objeto.StringToObject<Partida>(HttpContext.Session.GetString("partida"));
         int i = partida.moveFowardButton();
         ViewBag.cronometro = partida.cronometro;
-
+        ViewBag.name = partida.name;
+        HttpContext.Session.SetString("partida", Objeto.ObjectToString(partida));
         return View($"Habitacion{i}");
     }
     public IActionResult ANombre(string name)
