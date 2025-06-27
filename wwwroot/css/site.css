@@ -220,17 +220,29 @@ text-align: center;
 }
 
 .Room4 a{
-  margin: 23% 1% 0% 8%;
-  padding: 10%;
+  margin: 55% 1% 0% 1%;
+  padding: 50%;
   background: none;
 }
 
 .Room4 h2{
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
   background-color: rgb(87, 30, 30) ;
   width: 30%;
   padding: 1% 1% 1% 1%;
   margin: 0% 0% 0% 30%;
   border-radius: 15px;
+  }
+
+  .Room4 div{
+    display: inline-block;
+    background: none;
+    width: 18%;
+    margin: 1% 2.4% 0% 8.5%;
+  }
+  .Room4 p{
+    font-size: 110%;
+    color: darkred;
+    background: none;
   }
